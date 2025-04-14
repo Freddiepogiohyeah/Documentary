@@ -1,0 +1,255 @@
+nav.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000; /* or higher */
+    background-color: #f8f9fa; /* Or whatever your background color is */
+}
+nav.navbar .navbar-brand {
+    font-weight: bold;
+    color: #000000;
+    font-size: 1.2rem;
+}
+
+nav.navbar .navbar-nav .nav-link {
+    color: #000000;
+    margin-left: 15px;
+    padding: 8px 12px;
+    font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+    nav.navbar .navbar-nav .nav-link {
+        margin-left: 0;
+        padding: 8px 16px;
+        display: block;
+        text-align: center;
+    }
+}
+
+body {
+    padding-top: 30px;
+}
+
+#hero {
+    background: linear-gradient(45deg, #101a2b, #635a54, #1e2b3c);
+    background-size: 300% 300%;
+    animation: gradientAnimation 15s ease infinite;
+    color: white;
+    padding: 40px 0;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    position: relative;
+    z-index: 10;
+    margin-top: 40px;
+}
+
+#hero .container {
+    display: flex;
+    width: 100%;
+}
+
+#hero .carousel-col,
+#hero .text-col {
+    width: 50%;
+    padding: 0 20px;
+}
+
+#hero .carousel {
+    height: 500px;
+    width: 100%;
+}
+
+#hero h1 {
+    font-family: 'Caveat', cursive;
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+#hero .lead {
+    font-size: 1.2rem;
+}
+
+#hero .carousel-item img {
+    max-width: 75%;
+    max-height: 75%;
+    object-fit: contain;
+}
+
+@media (max-width: 768px) {
+    #hero .container {
+        flex-direction: column;
+    }
+
+    #hero .carousel-col {
+        width: 100%;
+        padding: 0;
+        height: 300px;
+    }
+}
+
+@keyframes gradientAnimation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+#hero-description {
+    margin-top: -30px;
+    padding: 20px 0;
+}
+
+#docs .card {
+    display: flex;
+    flex-direction: column;
+    height: 550px;
+    border: 1px solid #ddd;
+    border-radius: 0.5rem;
+}
+
+#docs .card img {
+    height: 200px;
+    object-fit: cover;
+    border-radius: 0.25rem;
+}
+
+#docs .card-body {
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    min-height: 250px;
+}
+
+#docs .card-text {
+    flex-grow: 1;
+}
+
+.card {
+    border: none;
+    border-radius: 0.5rem;
+}
+
+.card img {
+    height: 200px;
+    object-fit: cover;
+    border-radius: 0.25rem;
+}
+
+.card-body {
+    padding: 1.5rem;
+}
+
+.card-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.card-text {
+    font-size: 1rem;
+    color: #6c757d;
+}
+
+.about-image {
+    max-width: 200px;
+    margin: 20px auto;
+}
+
+@media (max-width: 768px) {
+    .about-image {
+        max-width: 100%;
+    }
+}
+
+#gallery img {
+    border-radius: 0.25rem;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out;
+}
+
+#gallery img:hover {
+    transform: scale(1.05);
+}
+
+#gallery .row.mt-4 {
+    margin-top: 1rem;
+}
+
+.btn-grey {
+    background-color: #808080;
+    border: none;
+    color: white;
+    padding: 8px 16px;
+    font-size: 0.9rem;
+    border-radius: 4px;
+    transition: background-color 0.2s ease;
+}
+
+.btn-grey:hover {
+    background-color: #666;
+}
+
+.caveat-text {
+    font-family: 'Caveat', cursive;
+    font-size: 2.0rem;
+    line-height: 1.8;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.contact-title {
+    font-family: 'Caveat', cursive;
+}
+
+.contact-icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+#merchandise .card {
+    border: none;
+    border-radius: 0.5rem;
+}
+
+#merchandise .card img {
+    height: 400px;
+    object-fit: cover;
+    border-radius: 0.25rem;
+}
+
+#merchandise .card-body {
+    padding: 1.5rem;
+}
+
+#merchandise .card-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+#merchandise .card-text {
+    font-size: 1rem;
+    color: #6c757d;
+}
+
+.icon {
+    width: 30px;
+    transition: transform 0.3s, filter 0.3s;
+}
+
+.icon:hover {
+    transform: scale(1.2);
+    filter: brightness(1.2);
+}
+
+footer {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    height: 40px;
+}
